@@ -19,7 +19,7 @@ namespace _2DSpaceShooter
 
         Player p = new Player();
 
-
+        
         // Constructor
         public Game1()
         {

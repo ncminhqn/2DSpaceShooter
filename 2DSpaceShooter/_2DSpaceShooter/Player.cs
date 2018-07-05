@@ -38,7 +38,8 @@ namespace _2DSpaceShooter
         // Draw
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, position, Color.White);
+            //spriteBatch.Draw(texture, position, Color.White);
+            spriteBatch.Draw(texture, new Rectangle(100, 100, 231, 86), Color.White);
         }
 
         // Update
