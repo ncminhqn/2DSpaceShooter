@@ -2,22 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>ship1.png</Source>
-      <Name>ship1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\ship1.xnb</Output>
-      <Time>2018-07-04T18:41:17.5213809+07:00</Time>
-    </Item>
-    <Item>
       <Source>ship.png</Source>
       <Name>ship</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2018-07-05T22:50:06.1085741+07:00</Time>
+      <Time>2018-07-06T06:44:06.0507029+07:00</Time>
     </Item>
     <Item>
       <Source>background.png</Source>
@@ -35,7 +26,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\asteroids.xnb</Output>
-      <Time>2018-07-06T00:31:16.2730179+07:00</Time>
+      <Time>2018-07-06T06:43:58.0585847+07:00</Time>
+    </Item>
+    <Item>
+      <Source>bullet.png</Source>
+      <Name>bullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\bullet.xnb</Output>
+      <Time>2018-07-06T04:42:45.4221064+07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

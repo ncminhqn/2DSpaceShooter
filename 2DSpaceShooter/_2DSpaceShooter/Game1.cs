@@ -16,10 +16,15 @@ namespace _2DSpaceShooter
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Random random = new Random();
 
+        // Asteroid List
+        List<Asteroid> asteroidList = new List<Asteroid>();
+
+        // Instantiating our Player and Starfield objects
         Player player = new Player();
         Starfield starfield = new Starfield();
-        Asteroid asteroid = new Asteroid();
+        //Asteroid asteroid = new Asteroid();
 
         
         // Constructor
@@ -48,7 +53,7 @@ namespace _2DSpaceShooter
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            asteroid.LoadContent(Content);
+            //asteroid.LoadContent(Content);
             player.LoadContent(Content);
             starfield.LoadContent(Content);
 
@@ -70,9 +75,18 @@ namespace _2DSpaceShooter
                 this.Exit();
 
             // TODO: Add your update logic here
-            asteroid.Update(gameTime);
+            
+            // foreach asteroid in our asteroidList, Update it
+            foreach(Asteroid a in asteroidList)
+            {
+                a.Update(gameTime);
+            }
+
+            
+
             player.Update(gameTime);
             starfield.Update(gameTime);
+            LoadAsteroids();
 
             base.Update(gameTime);
         }
@@ -83,14 +97,43 @@ namespace _2DSpaceShooter
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
             
+            
             starfield.Draw(spriteBatch);
-            asteroid.Draw(spriteBatch);
             player.Draw(spriteBatch);
+
+            foreach (Asteroid a in asteroidList)
+            {
+                a.Draw(spriteBatch);
+            }
 
             spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
+        }
+
+        // Load Asteroids
+        public void LoadAsteroids()
+        {
+            // Creating random variable for our X and Y axis of our asteroids
+            int randX = random.Next(0, 750);
+            int randY = random.Next(-600, -50);
+
+            // if there are less than 5 asteroids on the screen, then create more until there is 5 again
+            if (asteroidList.Count() < 6)
+            {
+                asteroidList.Add(new Asteroid(Content.Load<Texture2D>("asteroids"), new Vector2(randX, randY)));
+            }
+
+            // if any of the asteroids in the list were destroyed(or invisible), then remove them from the list
+            for (int i = 0; i < asteroidList.Count;i++)
+            {
+                if(!asteroidList[i].isVisible)
+                {
+                    asteroidList.RemoveAt(i);
+                    i--;
+                }
+            }
         }
     }
 }

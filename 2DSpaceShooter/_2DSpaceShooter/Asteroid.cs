@@ -17,16 +17,21 @@ namespace _2DSpaceShooter
         public Vector2 origin;
         public float rotationAngle;
         public int speed;
-        public bool isColliding, destroyed;
+
+        public bool isVisible;
+        Random random = new Random();
+        public float randX, randY;
 
         // Constructor
-        public Asteroid()
+        public Asteroid(Texture2D newTextture, Vector2 newPosition)
         {
-            position = new Vector2(400, -50);
-            texture = null;
+            position = newPosition;
+            texture = newTextture;
             speed = 4;
-            isColliding = false;
-            destroyed = false;
+            isVisible = true;
+            randX = random.Next(0, 750);
+            randY = random.Next(-600, -50);
+            
         }
 
         // Load Content
@@ -58,10 +63,9 @@ namespace _2DSpaceShooter
         // Draw
         public void Draw(SpriteBatch spriteBatch)
         {
-            if(!destroyed)
+            if(isVisible)
             {
                 spriteBatch.Draw(texture, position, null, Color.White, rotationAngle, origin, 1.0f, SpriteEffects.None, 0f);
-                //spriteBatch.Draw(texture, position, Color.White);
             }
         }
     }
