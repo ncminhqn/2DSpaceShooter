@@ -16,3 +16,5 @@ E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\obj\x86\Debug\Mi
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\obj\x86\Debug\_2DSpaceShooter.exe
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\obj\x86\Debug\_2DSpaceShooter.pdb
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\ship.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\background.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\asteroids.xnb

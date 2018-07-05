@@ -38,8 +38,8 @@ namespace _2DSpaceShooter
         // Draw
         public void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, position, Color.White);
-            spriteBatch.Draw(texture, new Rectangle(100, 100, 231, 86), Color.White);
+            // draw ship
+            spriteBatch.Draw(texture, position, Color.White);
         }
 
         // Update
@@ -49,26 +49,32 @@ namespace _2DSpaceShooter
             KeyboardState keyState = Keyboard.GetState();
 
             // Ship Controls
+            // Up
             if (keyState.IsKeyDown(Keys.W))
                 position.Y = position.Y - speed;
-
+            // Down
             if (keyState.IsKeyDown(Keys.A))
                 position.X = position.X - speed;
-
+            // Left
             if (keyState.IsKeyDown(Keys.S))
                 position.Y = position.Y + speed;
-
+            // Right
             if (keyState.IsKeyDown(Keys.D))
                 position.X = position.X + speed;
 
             // keep Player Ship In Screen Bounds
+            // minX = 0
             if (position.X <= 0)
                 position.X = 0;
+            // minX = maxX.ScreenBound - ship.Width
             if (position.X >= 800 - texture.Width)
                 position.X = 800 - texture.Width;
 
+
+            // minY = 0
             if (position.Y <= 0)
                 position.Y = 0;
+            // maxY = maxY.ScreenBound - ship.Height
             if (position.Y >= 950 - texture.Height)
                 position.Y = 950 - texture.Height;
         }

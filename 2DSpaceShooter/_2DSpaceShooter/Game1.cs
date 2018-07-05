@@ -17,7 +17,9 @@ namespace _2DSpaceShooter
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Player p = new Player();
+        Player player = new Player();
+        Starfield starfield = new Starfield();
+        Asteroid asteroid = new Asteroid();
 
         
         // Constructor
@@ -45,15 +47,18 @@ namespace _2DSpaceShooter
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            p.LoadContent(Content);
 
-            // TODO: use this.Content to load your game content here
+            asteroid.LoadContent(Content);
+            player.LoadContent(Content);
+            starfield.LoadContent(Content);
+
+            
         }
         
         // Unload Content
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+            
         }
         
 
@@ -65,7 +70,9 @@ namespace _2DSpaceShooter
                 this.Exit();
 
             // TODO: Add your update logic here
-            p.Update(gameTime);
+            asteroid.Update(gameTime);
+            player.Update(gameTime);
+            starfield.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -75,8 +82,10 @@ namespace _2DSpaceShooter
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-
-            p.Draw(spriteBatch);
+            
+            starfield.Draw(spriteBatch);
+            asteroid.Draw(spriteBatch);
+            player.Draw(spriteBatch);
 
             spriteBatch.End();
             // TODO: Add your drawing code here
