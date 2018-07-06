@@ -22,3 +22,6 @@ E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Co
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemy.xnb
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemybullet.xnb
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\georgia.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\explosion.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\menu.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\gameover.xnb

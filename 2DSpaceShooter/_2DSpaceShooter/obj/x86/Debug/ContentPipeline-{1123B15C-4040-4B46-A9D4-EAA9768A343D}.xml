@@ -73,6 +73,33 @@
       <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\georgia.xnb</Output>
       <Time>2018-07-06T23:43:38.7366767+07:00</Time>
     </Item>
+    <Item>
+      <Source>explosion.png</Source>
+      <Name>explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\explosion.xnb</Output>
+      <Time>2018-07-07T02:23:50.0634553+07:00</Time>
+    </Item>
+    <Item>
+      <Source>menu.png</Source>
+      <Name>menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\menu.xnb</Output>
+      <Time>2018-07-07T03:57:09.43685+07:00</Time>
+    </Item>
+    <Item>
+      <Source>gameover.png</Source>
+      <Name>gameover</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\gameover.xnb</Output>
+      <Time>2018-07-07T04:10:38.6913268+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{1123B15C-4040-4B46-A9D4-EAA9768A343D}</ContentProjectGUID>
