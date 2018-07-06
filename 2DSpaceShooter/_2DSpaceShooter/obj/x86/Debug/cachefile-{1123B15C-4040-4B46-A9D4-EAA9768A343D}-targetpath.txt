@@ -2,3 +2,7 @@ Content\ship.xnb
 Content\background.xnb
 Content\asteroids.xnb
 Content\bullet.xnb
+Content\life.xnb
+Content\enemy.xnb
+Content\enemybullet.xnb
+Content\georgia.xnb

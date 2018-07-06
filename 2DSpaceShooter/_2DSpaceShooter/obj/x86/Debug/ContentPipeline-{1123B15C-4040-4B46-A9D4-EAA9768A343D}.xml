@@ -37,6 +37,42 @@
       <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\bullet.xnb</Output>
       <Time>2018-07-06T04:42:45.4221064+07:00</Time>
     </Item>
+    <Item>
+      <Source>life.png</Source>
+      <Name>life</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\life.xnb</Output>
+      <Time>2018-07-06T21:11:06.5470234+07:00</Time>
+    </Item>
+    <Item>
+      <Source>enemy.png</Source>
+      <Name>enemy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemy.xnb</Output>
+      <Time>2018-07-06T22:42:33.0642122+07:00</Time>
+    </Item>
+    <Item>
+      <Source>enemybullet.png</Source>
+      <Name>enemybullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemybullet.xnb</Output>
+      <Time>2018-07-06T22:50:20.7307594+07:00</Time>
+    </Item>
+    <Item>
+      <Source>georgia.spritefont</Source>
+      <Name>georgia</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\georgia.xnb</Output>
+      <Time>2018-07-06T23:43:38.7366767+07:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{1123B15C-4040-4B46-A9D4-EAA9768A343D}</ContentProjectGUID>

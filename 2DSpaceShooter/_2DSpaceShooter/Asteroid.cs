@@ -37,9 +37,6 @@ namespace _2DSpaceShooter
         // Load Content
         public void LoadContent(ContentManager Content)
         {
-            texture = Content.Load<Texture2D>("asteroids");
-            origin.X = texture.Width / 2;
-            origin.Y = texture.Height / 2;
         }
 
         // Update
@@ -47,6 +44,10 @@ namespace _2DSpaceShooter
         {
             // Set boundingBox for collision
             boundingBox = new Rectangle((int)position.X, (int)position.Y, 45, 45);
+
+            // Updating origin for rotation
+            origin.X = texture.Width / 2;
+            origin.Y = texture.Height / 2;
 
             // Update Movement
             position.Y = position.Y + speed;

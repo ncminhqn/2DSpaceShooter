@@ -12,24 +12,39 @@ namespace _2DSpaceShooter
     public class Player
     {
         
-        public Texture2D texture, bulletTexture;
-        public Vector2 position;
-        public int speed;
+        public Texture2D texture, bulletTexture, lifeTexture;
+        public Vector2 position, lifeBarPosition;
+        public int speed, life;
         public float bulletDelay;
-        public Rectangle boundingBox;
+        public Rectangle boundingBox, lifeRectangle;
         public bool isColliding;
         private List<Bullet> bulletList;
+        
+
+        internal List<Bullet> BulletList
+        {
+            get
+            {
+                return bulletList;
+            }
+
+            set
+            {
+                bulletList = value;
+            }
+        }
 
 
         // Constructor
         public Player()
         {
-            bulletList = new List<Bullet>();
+            BulletList = new List<Bullet>();
             texture = null;
-            position = new Vector2(300, 300);
-            bulletDelay = 5;
+            position = new Vector2(400, 800);
+            bulletDelay = 10;
             speed = 10;
             isColliding = false;
+            life = 10;
         }
 
         // Load Content
@@ -37,6 +52,7 @@ namespace _2DSpaceShooter
         {
             texture = Content.Load<Texture2D>("ship");
             bulletTexture = Content.Load<Texture2D>("bullet");
+            lifeTexture = Content.Load<Texture2D>("life");
         }
 
         // Draw
@@ -44,8 +60,21 @@ namespace _2DSpaceShooter
         {
             // draw ship
             spriteBatch.Draw(texture, position, Color.White);
-            foreach (Bullet b in bulletList)
+
+            
+            
+
+            // draw bullet
+            foreach (Bullet b in BulletList)
                 b.Draw(spriteBatch);
+
+            // draw lifeBar
+            Vector2 lifePosition = new Vector2(10, 10);
+            for (int i = 0; i < life; i++)
+            {
+                spriteBatch.Draw(lifeTexture, lifePosition, Color.White);
+                lifePosition.X += lifeTexture.Width + 10;
+            }
         }
 
         // Update
@@ -54,8 +83,15 @@ namespace _2DSpaceShooter
             // Getting Keyboard State
             KeyboardState keyState = Keyboard.GetState();
 
+            // BoundingBox for our PlayerShip
+            boundingBox = new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height);
+
+            // Set Rectangle for lifeBar
+            lifeRectangle = new Rectangle((int)lifeBarPosition.X, (int)lifeBarPosition.Y, life, 25);
+
+
             // Fire Bullet
-            if(keyState.IsKeyDown(Keys.Space))
+            if (keyState.IsKeyDown(Keys.Space))
             {
                 Shoot();
             }
@@ -108,21 +144,24 @@ namespace _2DSpaceShooter
 
                 newBullet.isVisible = true;
 
-                if (bulletList.Count() < 20)
-                    bulletList.Add(newBullet);
+                if (BulletList.Count() < 20)
+                    BulletList.Add(newBullet);
             }
 
             // reset bullet delay
             if (bulletDelay == 0)
-                bulletDelay = 5;
+                bulletDelay = 10;
         }
 
         // Update bullet function
         public void UpdateBullets()
         {
             // for each bullet in our bulletList: update the movement and if the bullet hits the top of the screen remove it from the list
-            foreach (Bullet b in bulletList)
+            foreach (Bullet b in BulletList)
             {
+                // BoundingBox for our every bullet in our bulletList
+                b.boundingBox = new Rectangle((int)b.position.X, (int)b.position.Y, b.texture.Width, b.texture.Height);
+                
                 // set movement for bullet
                 b.position.Y = b.position.Y - b.speed;
 
@@ -132,11 +171,11 @@ namespace _2DSpaceShooter
             }
 
             // Iterate through bulletList and see if any of the bullets are not visible, if they arent then remove that bullet from our bullet list
-            for(int i = 0; i < bulletList.Count; i++)
+            for(int i = 0; i < BulletList.Count; i++)
             {
-                if(!bulletList[i].isVisible)
+                if(!BulletList[i].isVisible)
                 {
-                    bulletList.RemoveAt(i);
+                    BulletList.RemoveAt(i);
                     i--;
                 }
             }

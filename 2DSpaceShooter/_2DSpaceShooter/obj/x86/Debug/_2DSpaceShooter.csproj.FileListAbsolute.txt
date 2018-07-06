@@ -18,3 +18,7 @@ E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Co
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\background.xnb
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\asteroids.xnb
 E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\bullet.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\life.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemy.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\enemybullet.xnb
+E:\2DSpaceShooter\2DSpaceShooter\2DSpaceShooter\_2DSpaceShooter\bin\x86\Debug\Content\georgia.xnb
