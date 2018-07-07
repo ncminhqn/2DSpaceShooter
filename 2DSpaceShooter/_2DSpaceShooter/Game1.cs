@@ -135,14 +135,14 @@ namespace _2DSpaceShooter
                         // foreach asteroid in our asteroidList, update and check for collision
                         foreach (Asteroid a in asteroidList)
                         {
-                            // Check to see if any of the asteroids are colliding with our playership, if they are.. set isVisible to False(remove them from the asteroidList)
+                            // Check to see if any of the asteroids are colliding with our playership
                             if (a.boundingBox.Intersects(player.boundingBox))
                             {
                                 player.life -= 1;
                                 a.isVisible = false;
                             }
 
-                            // Interate through our bulletList if any asteroids come in contacts with these bullets, destroy bullet and asteroid
+                            // Check player bullet collision to asteroid
                             for (int i = 0; i < player.BulletList.Count; i++)
                             {
                                 if (a.boundingBox.Intersects(player.BulletList[i].boundingBox))

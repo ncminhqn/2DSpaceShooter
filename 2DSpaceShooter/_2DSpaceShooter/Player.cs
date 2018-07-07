@@ -11,7 +11,6 @@ namespace _2DSpaceShooter
 {
     public class Player
     {
-        
         public Texture2D texture, bulletTexture, lifeTexture;
         public Vector2 position, lifeBarPosition;
         public int speed, life;
@@ -19,7 +18,6 @@ namespace _2DSpaceShooter
         public Rectangle boundingBox, lifeRectangle;
         public bool isColliding;
         private List<Bullet> bulletList;
-        
 
         internal List<Bullet> BulletList
         {
@@ -33,8 +31,7 @@ namespace _2DSpaceShooter
                 bulletList = value;
             }
         }
-
-
+        
         // Constructor
         public Player()
         {
@@ -60,10 +57,7 @@ namespace _2DSpaceShooter
         {
             // draw ship
             spriteBatch.Draw(texture, position, Color.White);
-
             
-            
-
             // draw bullet
             foreach (Bullet b in BulletList)
                 b.Draw(spriteBatch);
@@ -129,7 +123,7 @@ namespace _2DSpaceShooter
                 position.Y = 950 - texture.Height;
         }
 
-        // Shoot Method: used to set starting position of out bullets
+        // Shoot Method: used to set starting position of out bullets 
         public void Shoot()
         {
             // Shoot only if bullet delay resets

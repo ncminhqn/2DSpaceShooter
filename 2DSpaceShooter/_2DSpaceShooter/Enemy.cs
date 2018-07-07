@@ -14,7 +14,7 @@ namespace _2DSpaceShooter
         public Rectangle boundingBox;
         public Texture2D texture, bulletTexture;
         public Vector2 position;
-        public int health, speed, bulletDelay, currentDifficiltyLevel;
+        public int speed, bulletDelay;
         public bool isVisible;
         public List<Bullet> bulletList;
 
@@ -24,9 +24,7 @@ namespace _2DSpaceShooter
             bulletList = new List<Bullet>();
             texture = newTexture;
             bulletTexture = newBulletTexture;
-            health = 5;
             position = newPosition;
-            currentDifficiltyLevel = 1;
             bulletDelay = 60;
             speed = 5;
             isVisible = true;

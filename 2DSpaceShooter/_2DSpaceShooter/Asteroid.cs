@@ -31,7 +31,6 @@ namespace _2DSpaceShooter
             isVisible = true;
             randX = random.Next(0, 750);
             randY = random.Next(-600, -50);
-            
         }
 
         // Load Content
