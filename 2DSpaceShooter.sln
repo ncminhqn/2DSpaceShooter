@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_2DSpaceShooter", "2DSpaceS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_2DSpaceShooterContent", "2DSpaceShooter\_2DSpaceShooterContent\_2DSpaceShooterContent.contentproj", "{1123B15C-4040-4B46-A9D4-EAA9768A343D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{C740D7A7-EBEF-4CD4-8D1C-D0CB443284A8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,8 +19,6 @@ Global
 		{EA600599-C949-4FC3-9B5F-A4536281B386}.Release|x86.Build.0 = Release|x86
 		{1123B15C-4040-4B46-A9D4-EAA9768A343D}.Debug|x86.ActiveCfg = Debug|x86
 		{1123B15C-4040-4B46-A9D4-EAA9768A343D}.Release|x86.ActiveCfg = Release|x86
-		{C740D7A7-EBEF-4CD4-8D1C-D0CB443284A8}.Debug|x86.ActiveCfg = Debug
-		{C740D7A7-EBEF-4CD4-8D1C-D0CB443284A8}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
